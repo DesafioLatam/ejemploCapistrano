@@ -8,7 +8,7 @@ set :user                    , 'ubuntu'
 set :application             , 'todoapp'
 set :deploy_to               , "/home/#{fetch(:user)}/apps/#{fetch(:application)}"
 set :scm                     , :git
-set :repo_url                , 'git@github.com:user/reponame.git'
+set :repo_url                , 'git@github.com:DesafioLatam/ejemploCapistrano.git'
 set :branch                  , :master
 set :keep_releases           , 5
 set :ssh_options             , { forward_agent: true, user: fetch(:user) , keys: %w(~/.ssh/id_rsa.pub) }
